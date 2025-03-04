@@ -1,35 +1,37 @@
+/* Resetting margin and setting box-sizing to border-box for all elements */
 * {
   margin: 0;
   box-sizing: border-box;
   
 }
 
-
+/* Styling for the navigation bar */
 nav {
   max-width: 1400px;
   height: 100%;
   margin: 0 auto;
   height: 88px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
+/* Styling for the logo inside the navigation bar */
 .nav__logo {
   width: 263px;
   height: 59px;
   display: flex;
-  justify-content: space-between;
- 
-
+  justify-content: space-evenly;
 }
 
+/* Styling for the text inside the logo */
 .nav__logo-text {
   align-self: center;
   width: 190px;
   height: 48px;
 }
 
+/* Styling for the navigation list */
 .nav__logo-text span {
   text-transform: uppercase;
   color: #343D33;
@@ -59,8 +61,6 @@ nav ul {
   text-transform: uppercase;
   list-style: none;
   gap: 40px;
- 
-  
 }
 
 nav ul li a {
@@ -70,12 +70,10 @@ nav ul li a {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 1,5px;
-  
-  
-  
+  letter-spacing: 0.7px;
 }
 
+/* Styling for buttons */
 button {
   background-color: transparent;
   width: 169px;
@@ -91,5 +89,54 @@ button {
   font-weight: 700;
   size: 14px;
   line-height: 16px;
+}
+
+/* Styling for the main content section */
+.main__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1400px;
+  width: 100%;
+  height: 830px;
+  margin: 0 auto;
+}
+
+.main__content-text {
+  width: 528px;
+  height: 306px;
+}
+
+.main__content-text h1 {
+  color: #343D33;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 62.7px;
+  letter-spacing: 0%;
+  margin-bottom: 7px;
+}
+.main__content-text p {
+  color: #414840;
+  font-family: "roboto";
+  font-weight: 300;
+  margin-bottom: 7px;
+  font-size: 27px;
+  line-height: 37px;
+}
+
+/* Styling for the buttons in the main content section */
+.main__content-buttons {
+  display: flex;
+  width: 388px;
+  height: 56px;
+  gap: 7px;
+
+}
+
+/* Styling for the green button in the main content section */
+#main__content-greenButton {
+  background-color: #475F45;
+  color: #fff;
 }
   
